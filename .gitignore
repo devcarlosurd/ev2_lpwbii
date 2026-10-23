@@ -1,0 +1,18 @@
+# 1. Dependencias pesadas (no deben subirse a GitHub)
+node_modules/
+dist/
+
+# 2. Seguridad crítica (Pauta IPVG: NUNCA subir contraseñas reales)
+.env
+.env.local
+*.env
+
+# 3. Archivos del sistema y temporales
+.vscode/
+.idea/
+*.log
+brain/
+scratch/
+pauta_extraida.txt
+*.tsbuildinfo
+GUIA_DEFENSA_*.md
