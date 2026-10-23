@@ -36,3 +36,4 @@ Thumbs.db
 brain/
 scratch/
 pauta_extraida.txt
+*.tsbuildinfo
