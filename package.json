@@ -1,0 +1,14 @@
+{
+  "name": "sistema-inventario-tecnologico",
+  "version": "1.0.0",
+  "description": "Sistema de Inventario de Equipamiento Tecnológico - Evaluación N.º 2 IPVG",
+  "scripts": {
+    "start:backend": "cd backend && npm run start:dev",
+    "start:frontend": "cd frontend && npm run dev",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build"
+  },
+  "author": "Carlos Urdaneta Araujo",
+  "license": "ISC"
+}
