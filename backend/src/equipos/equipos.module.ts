@@ -1,10 +1,13 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Equipo } from './entities/equipo.entity';
+import { EquiposService } from './equipos.service';
+import { EquiposController } from './equipos.controller';
 
 @Module({
-  // Registra la entidad Equipo dentro del módulo para tener acceso a su repositorio
   imports: [TypeOrmModule.forFeature([Equipo])],
-  exports: [TypeOrmModule],
+  controllers: [EquiposController],
+  providers: [EquiposService],
+  exports: [EquiposService],
 })
 export class EquiposModule {}
